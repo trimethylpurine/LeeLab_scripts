@@ -1,0 +1,94 @@
+#!/bin/bash 
+#This is the preprocessing pipeline for all subjects and all runs. Requires one exemplar of each analysis to reference. 
+##FOR LAB MACS
+
+j=(001 002 003 004)
+INDEX="1 2 3 4"
+
+######################
+######SMOOTHED
+######################
+
+######
+#GAP
+######
+count=0
+for i in $INDEX; do
+for r in 1 2 3 4 5 6 7; do
+
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/preproc/smoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_gap${r}_smoothed.fsf;
+
+echo "Created preproc .fsf file for subject ${j[$count]} gap${r}!"
+
+done
+((count++))
+done
+
+
+######
+#IMAGINE
+######
+count=0
+for i in $INDEX; do
+for r in 1 2; do
+
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/preproc/smoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_imagine${r}_smoothed.fsf;
+
+echo "Created preproc .fsf file for subject ${j[$count]} imagine${r}!"
+
+done
+((count++))
+done
+
+
+######
+#LOC
+######
+count=0
+for i in $INDEX; do
+for r in 1 2; do
+
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/preproc/smoothed/001/loc1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/loc1/loc${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_loc${r}_smoothed.fsf;
+
+echo "Created preproc .fsf file for subject ${j[$count]} loc${r}!"
+
+done
+((count++))
+done
+
+
+######################
+######UNSMOOTHED
+######################
+
+
+######
+#GAP
+######
+count=0
+for i in $INDEX; do
+for r in 1 2 3 4 5 6 7; do
+
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/preproc/unsmoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_gap${r}_unsmoothed.fsf;
+
+echo "Created preproc .fsf file for subject ${j[$count]} gap${r}!"
+
+done
+((count++))
+done
+
+
+######
+#IMAGINE
+######
+count=0
+for i in $INDEX; do
+for r in 1 2; do
+
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/preproc/unsmoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_imagine${r}_unsmoothed.fsf;
+
+echo "Created preproc .fsf file for subject ${j[$count]} imagine${r}!"
+
+done
+((count++))
+done
