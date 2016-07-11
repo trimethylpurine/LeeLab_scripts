@@ -16,7 +16,7 @@ count=0
 for i in $INDEX; do
 for r in 1 2 3 4 5 6 7; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_gap${r}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/full_analysis/${j[$count]}_gap${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for subject ${j[$count]} gap${r}!"
 
@@ -32,7 +32,7 @@ count=0
 for i in $INDEX; do
 for r in 1 2; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_imagine${r}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/full_analysis/${j[$count]}_imagine${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for subject ${j[$count]} imagine${r}!"
 
@@ -48,7 +48,7 @@ count=0
 for i in $INDEX; do
 for r in 1 2; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/loc1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/loc1/loc${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_loc${r}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/001/loc1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/loc1/loc${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/full_analysis/${j[$count]}_loc${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for subject ${j[$count]} loc${r}!"
 
@@ -69,7 +69,7 @@ count=0
 for i in $INDEX; do
 for r in 1 2 3 4 5 6 7; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/unsmoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_gap${r}_unsmoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/unsmoothed/001/gap1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/gap1/gap${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/full_analysis/${j[$count]}_gap${r}_unsmoothed.fsf;
 
 echo "Created full abalysis .fsf file for subject ${j[$count]} gap${r}!"
 
@@ -85,7 +85,7 @@ count=0
 for i in $INDEX; do
 for r in 1 2; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/unsmoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/${j[$count]}_imagine${r}_unsmoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/unsmoothed/001/imagine1.feat/design.fsf | sed "s/001/${j[$count]}/g" | sed "s/imagine1/imagine${r}/g" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/full_analysis/${j[$count]}_imagine${r}_unsmoothed.fsf;
 
 echo "Created full analysis .fsf file for subject ${j[$count]} imagine${r}!"
 
