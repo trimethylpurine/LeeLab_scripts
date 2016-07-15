@@ -13,13 +13,12 @@
 count=0
 for r in 2 3 4 5 6 7 8 9; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_gap/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${j[$count]}.feat/g" | sed "s/contrast1/contrast${j[$count]}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/grouplevel_gap_contrast${j[$count]}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_gap/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${r}.feat/g" | sed "s/contrast1/contrast${r}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/grouplevel_gap_contrast${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for gap cope${r}!"
 
 done
 ((count++))
-done
 
 
 ######
@@ -28,13 +27,12 @@ done
 count=0
 for r in 2 3 4 5 6 7 8 9; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_imagine/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${j[$count]}.feat/g" | sed "s/contrast1/contrast${j[$count]}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/grouplevel_imagine_contrast${j[$count]}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_imagine/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${r}.feat/g" | sed "s/contrast1/contrast${r}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/grouplevel_imagine_contrast${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for imagine cope${r}!"
 
 done
 ((count++))
-done
 
 
 ######
@@ -43,10 +41,9 @@ done
 count=0
 for r in 2 3 4 5 6 7 8 9; do
 
-cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_loc/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${j[$count]}.feat/g" | sed "s/contrast1/contrast${j[$count]}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/grouplevel_loc_contrast${j[$count]}_smoothed.fsf;
+cat /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/full_analysis/smoothed/all_loc/contrast1.gfeat/design.fsf | sed "s/cope1.feat/cope${r}.feat/g" | sed "s/contrast1/contrast${r}/" > /Users/labuser/Documents/Jonathan_gapclass/highres_data/york/fsf_files/grouplevel_loc_contrast${r}_smoothed.fsf;
 
 echo "Created full analysis .fsf file for loc cope${r}!"
 
 done
 ((count++))
-done
