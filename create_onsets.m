@@ -1,6 +1,32 @@
 %excel(:,1) = [ 1; 4; 2; 3; 1; 3];
 %excel(:,2) = [1;1;1;0;0;1];
 
+subject_numbers = [1:16]
+
+%column 1 is subj
+master_data(:,1) = xlsread('gapclass_all_behavioural_data.xlsx','','A   ')
+
+%column 2 is run
+master_data(:,2) = xlsread('gapclass_all_behavioural_data.xlsx','','B    ')
+
+%column 3 is trial (use resp CRESP)
+master_data(:,3) = xlsread('gapclass_all_behavioural_data.xlsx','','C    ')
+
+%column 4 is accuracy 
+master_data(:,4) = xlsread('gapclass_all_behavioural_data.xlsx','','D    ')
+
+for subj = subject_numbers
+
+%makes a Boolean that is true when master data = subj
+index = master_data(:,1) == subj;
+
+%makes a variable using that Boolean describing only the subj
+subj_data = master_data(index,:);
+
+
+end
+
+
 %creates a matrix called excel; column 1 is the A range on the spreadsheet, while column 2 is the D range)
 excel(:,1) = xlsread('test_excel.xlsx','','A2:A13')
 excel(:,2) = xlsread('test_excel.xlsx','','D2:D13')
