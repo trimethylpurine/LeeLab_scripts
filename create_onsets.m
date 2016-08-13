@@ -4,16 +4,16 @@
 subject_numbers = [1:16]
 
 %column 1 is subj
-master_data(:,1) = xlsread('gapclass_all_behavioural_data.xlsx','','A   ')
+master_data(:,1) = xlsread('gapclass_all_behavioural_data.xlsx','','A2:A2017')
 
 %column 2 is run
-master_data(:,2) = xlsread('gapclass_all_behavioural_data.xlsx','','B    ')
+master_data(:,2) = xlsread('gapclass_all_behavioural_data.xlsx','','B2:B2017')
 
 %column 3 is trial (use resp CRESP)
-master_data(:,3) = xlsread('gapclass_all_behavioural_data.xlsx','','C    ')
+master_data(:,3) = xlsread('gapclass_all_behavioural_data.xlsx','','FH2:FH2017')
 
 %column 4 is accuracy 
-master_data(:,4) = xlsread('gapclass_all_behavioural_data.xlsx','','D    ')
+master_data(:,4) = xlsread('gapclass_all_behavioural_data.xlsx','','FG2:FG2017')
 
 for subj = subject_numbers
 
